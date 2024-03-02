@@ -3,10 +3,12 @@ package com.amit.jobapp.company.impl;
 import com.amit.jobapp.company.Company;
 import com.amit.jobapp.company.CompanyRepository;
 import com.amit.jobapp.company.CompanyService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CompanyServiceImpl implements CompanyService {
 
     CompanyRepository companyRepository;
