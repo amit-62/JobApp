@@ -1,6 +1,7 @@
 package com.amit.jobapp.company;
 
 import com.amit.jobapp.job.Job;
+import com.amit.jobapp.reviews.Reviews;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
@@ -17,6 +18,10 @@ public class Company {
     @JsonIgnore
     @OneToMany(mappedBy = "company")
     private List<Job> jobs;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "company")
+    private List<Reviews> reviews;
 
     public Company() {
     }
